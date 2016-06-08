@@ -6,7 +6,7 @@ $(function() {
                         console.log(users);
                         var message = "No users to display...";
                         if ( users.length > 0 ) {
-                                message = "User " + users[0].firstName + " has come";
+                                message = "User " + users[0].firstName + " has come   ------->   " + users[0].AreYouSwagg + " Yeah dude!";
                         }
                         $(".dardou").text(message);
                 });
@@ -14,6 +14,6 @@ $(function() {
 
         loadUsers();
 
-        setInterval( loadUsers, 2000 );
+        setInterval( loadUsers, 200 );
 
 });
